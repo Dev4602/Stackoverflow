@@ -31,8 +31,7 @@ app.get("/", (req, res) => {
 
 const PORT = process.env.PORT || 5000;
 
-const DATABASE_URL = process.env.CONNECTION_URL;
-
+const DATABASE_URL = 'mongodb+srv://shahdev017:omsairam9@cluster0.4va3ivb.mongodb.net/?retryWrites=true&w=majority'
 mongoose
   .connect(DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() =>
